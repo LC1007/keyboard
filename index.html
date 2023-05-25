@@ -9,8 +9,9 @@
   </head>
   <body>
     <div class="container">
+      <input type="text" id="screen">
       <div class="keyboard">
-        <button class="esc">ESC</button>
+        <button class="esc" onclick="getValue()">ESC</button>
         <button class="f1">F1</button>
         <button class="f2">F2</button>
         <button class="f3">F3</button>
@@ -26,7 +27,8 @@
         <button class="insert">Insert</button>
         <button class="del">Delete</button>
         <button><i class="bi bi-calculator"></i></button>
-        <button>+/-</button>
+        <button class="ce">CE</button>
+        <button class="addSub">+/-</button>
         <button><i class="bi bi-power"></i></button>
         <button class="backtic">`</button>
         <button class="one">1</button>
@@ -42,7 +44,7 @@
         <button class="sub">-</button>
         <button class="equal">=</button>
         <button class="backspace">Backspace</button>
-        <button class="numlock">Num Lock</button>
+        <button class="num-lock">Num Lock</button>
         <button class="div">/</button>
         <button class="multiply">*</button>
         <button class="sub-2">-</button>
@@ -64,7 +66,7 @@
         <button class="eight-key">8</button>
         <button class="nine-key">9</button>
         <button class="add-key">+</button>
-        <button>Caps Lock</button>
+        <button class="caps-lock">Caps Lock</button>
         <button class="a">A</button>
         <button class="s">S</button>
         <button class="d">D</button>
@@ -104,19 +106,14 @@
         <button class="spacebar"></button>
         <button class="alt-2">Alt</button>
         <button class="ctrl-2">Ctrl</button>
-        <button class="arrow-left">
-          <i class="bi bi-arrow-left-short"></i>
-        </button>
-        <button class="arrow-up"><i class="bi bi-arrow-up-short"></i></button>
-        <button class="arrow-down">
-          <i class="bi bi-arrow-down-short"></i>
-        </button>
-        <button class="arrow-right">
-          <i class="bi bi-arrow-right-short"></i>
-        </button>
+        <button class="arrow-left"><i class="bi bi-arrow-left-short"></i></button>
+        <div class="arrow-keys">
+          <button class="arrow-up"><i class="bi bi-arrow-up-short"></i></button>
+          <button class="arrow-down"><i class="bi bi-arrow-down-short"></i></button>
+        </div>
+        <button class="arrow-right"><i class="bi bi-arrow-right-short"></i></button>
         <button class="zero-key">0</button>
         <button class="dot-key">.</button>
-        <button class="enter-3">Enter</button>
       </div>
     </div>
     <script src="./script/code.js"></script>

@@ -1,20 +1,158 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 button {
-  padding: 1.7rem;
+  padding: 1rem;
 }
 
 .container {
-  margin: 1rem;
+  margin: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 95%;
 }
 
 .keyboard {
   display: grid;
   grid-template-areas:
    "btn1 btn2 btn3 btn4 btn5 btn6 btn7 btn8 btn9 btn10 btn11 btn12 btn13 btn14 btn15 btn16 btn17 btn18 btn19"
-   "btn20 btn21 btn22 btn23 btn24 btn25 btn26 btn27 btn28 btn29 btn30 btn31 btn32 btn33 btn34 btn35 btn36 btn37 btn38"
-   "btn39 btn40 bt41n btn42 btn43 btn44 btn45 btn46 btn47 btn48 btn49 btn50 btn51 btn52 btn53 btn54 btn55 btn56 btn57"
-   "btn58 btn59 btn60 btn61 btn62 btn63 btn64 btn65 btn66 btn67 btn68 btn69 btn70 btn71 btn72 btn73 btn74 btn75 btn76"
-   "btn77 btn78 btn79 btn80 btn81 btn82 btn83 btn84 btn85 btn86 btn87 btn88 btn89 btn90 btn91 btn92 btn93 btn94 btn95"
-   "btn96 btn97 btn98 btn99 btn100 btn102 btn103 btn104 btn105 btn106 btn107 btn108 btn109 btn110 btn111 btn112 btn113 btn114 btn115g";
+   "btn20 btn21 btn22 btn23 btn24 btn25 btn26 btn27 btn28 btn29 btn30 btn31 btn32 btn33 btn33 btn34 btn36 btn37 btn38"
+   "btn39 btn39 bt41n btn42 btn43 btn44 btn45 btn46 btn47 btn48 btn49 btn50 btn51 btn52 btn53 btnSevenKey btn55 btn56 btnAdd"
+   "btn58 btn58 btn60 btn61 btn62 btn63 btn64 btn65 btn66 btn67 btn68 btn69 btn70 btn71 btn71 btn73 btn74 btn75 btnAdd"
+   "btnShift btnShift btn79 btn80 btn81 btn82 btn83 btn84 btn85 btn86 btn87 btn88 btnShit-2 btnShit-2 btnShit-2 btn92 btn93 btn94 btnEnter"
+   "btn96 btn97 btn98 btnSpace btnSpace btnSpace btnSpace btnSpace btnSpace btn106 btn107 btn108 btn109 btn110 btn111 btnZero btnZero btn114 btnEnter";
+   gap: .5rem;
+}
+
+.esc{
+  grid-area: btn1;
+}
+
+.one{
+  grid-area: btn21;
+}
+
+.two{
+  grid-area: btn22;
+}
+
+.three{
+  grid-area: btn23;
+}
+
+.four{
+  grid-area: btn24;
+}
+
+.five{
+  grid-area: btn25;
+}
+
+.six{
+  grid-area: btn26;
+}
+
+.seven{
+  grid-area: btn27;
+}
+
+.eight{
+  grid-area: btn28;
+}
+
+.nine{
+  grid-area: btn29;
+}
+
+.zero{
+  grid-area: btn30;
+}
+
+.sub{
+  grid-area: btn31;
+}
+
+.equal{
+  grid-area: btn32;
+}
+
+.backtic{
+  grid-area: btn20;
+}
+
+.backspace{
+  grid-area: btn33;
+}
+
+.num-lock{
+  grid-area: btn34;
+}
+
+.div{
+  grid-area: btn36;
+}
+
+.multiply{
+  grid-area: btn37;
+}
+
+.sub-2{
+  grid-area: btn38;
+}
+
+.tab{
+  grid-area: btn39;
+}
+
+.caps-lock{
+  grid-area: btn58;
+}
+
+.enter-1{
+  grid-area: btn71;
+}
+
+.add-key{
+  grid-area: btnAdd;
+}
+
+.enter-2{
+  grid-area: btnEnter;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.shift-1{
+  grid-area: btnShift;
+}
+
+.shift-2{
+  grid-area: btnShit-2;
+}
+
+.spacebar{
+  grid-area: btnSpace;
+}
+
+.arrow-keys{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.arrow-up{
+  padding: 5px;
+}
+
+.arrow-down{
+  padding: 5px;
+}
+
+.zero-key{
+  grid-area: btnZero;
+}
+
+.seven-key{
+  grid-area: btnSevenKey;
+  width: 100%;
 }
